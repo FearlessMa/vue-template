@@ -1,0 +1,58 @@
+{
+  "name": "vue-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "commit": "auto-commit"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.6.2",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "moment": "^2.26.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@fearless-ma/auto-commit": "^1.38.0-stable.1",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
+    "less": "^2.7.3",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^10.2.9",
+    "prettier": "^2.0.5",
+    "standard-version": "^8.0.0",
+    "validate-commit-msg": "^2.14.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

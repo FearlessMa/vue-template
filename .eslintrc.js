@@ -6,7 +6,7 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/essential"
+        // "plugin:vue/essential"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -17,7 +17,7 @@ module.exports = {
         "sourceType": "module",
     },
     "plugins": [
-        "vue"
+        // "vue"
     ],
     "rules": {
         // "no-unused-vars": 0

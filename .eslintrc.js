@@ -8,10 +8,10 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
   },
-  // parserOptions: {
-  //   sourceType: 'module',
-  //   parser: 'babel-eslint',
-  // },
+  parserOptions: {
+    sourceType: 'module',
+    parser: 'babel-eslint',
+  },
   plugins: [],
   rules: {}
 };

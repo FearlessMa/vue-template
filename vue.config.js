@@ -13,7 +13,7 @@ module.exports = {
   },
   chainWebpack: config => {
     config.plugin("html").tap(args => {
-      return [{ ...args[0], title: "设备管理系统" }];
+      return [{ ...args[0], title: "vue-demo" }];
     });
   }
   // ...config,

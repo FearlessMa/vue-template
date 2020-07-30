@@ -4,11 +4,11 @@ import { Notification, Message } from 'ant-design-vue';
 
 // 添加响应拦截器
 axios.interceptors.response.use(
-  function(response) {
+  function (response) {
     resFormat(response);
     return response.data;
   },
-  function(error) {
+  function (error) {
     const errCode = error.message.replace(/[^0-9]/gi, '');
     try {
       errCode && serverError(error, errCode);
@@ -16,16 +16,16 @@ axios.interceptors.response.use(
       console.log('err', err);
     }
     return Promise.reject(error);
-  },
+  }
 );
 
 const fetchData = {
   get: (url, params, method = 'get') => axios[method](api[url], params),
-  post: (url, params, method = 'post') => axios[method](api[url], params),
+  post: (url, params, method = 'post') => axios[method](api[url], params)
 };
 
 // 处理响应状态码
-const resFormat = res => {
+const resFormat = (res) => {
   // 199 登录超时
   // 4 登录成功
   // 0 成功
@@ -37,7 +37,7 @@ const resFormat = res => {
 };
 // 状态map
 const resCodeMap = {
-  199: res => {
+  199: (res) => {
     Notification.open({
       type: 'error',
       message: `错误码 ${res.data.code || '暂无'}`,
@@ -46,9 +46,9 @@ const resCodeMap = {
       onClose: () => {
         location.hash = '#/login';
         location.reload();
-      },
+      }
     });
-  },
+  }
 };
 const serverError = (err, code) => {
   Notification.open({
@@ -57,7 +57,7 @@ const serverError = (err, code) => {
     description: `${err.message || '暂无'},服务异常，请联系管理员,url:${
       err.config.url
     }`,
-    duration: 3,
+    duration: 3
   });
 };
 

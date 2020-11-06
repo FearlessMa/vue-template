@@ -1,5 +1,5 @@
 {
-  "name": "vue-template",
+  "name": "side-machine-web",
   "version": "0.1.1",
   "private": true,
   "scripts": {
@@ -11,9 +11,11 @@
   "dependencies": {
     "ant-design-vue": "^1.6.2",
     "axios": "^0.19.2",
+    "concise-clock": "^1.0.4",
     "core-js": "^3.6.5",
     "moment": "^2.26.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.7"
   },
   "devDependencies": {
     "@fearless-ma/auto-commit": "^1.38.0-stable.1",

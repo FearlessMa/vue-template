@@ -32,9 +32,11 @@ import {
   Pagination,
   Tag,
   Descriptions,
+  Result
 } from 'ant-design-vue';
 
 export const registerComponent = Vue => {
+  Vue.component(Result.name, Result);
   Vue.component(Button.name, Button);
   Vue.component(Menu.name, Menu);
   Vue.component(Menu.Item.name, Menu.Item);

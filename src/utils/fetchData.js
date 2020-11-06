@@ -32,7 +32,7 @@ const resFormat = (res) => {
   if (res && res.data && res.data.code == 199) {
     resCodeMap[res.data.code] && resCodeMap[res.data.code](res);
   } else if (res.data.code > 0 && res.data.code != 4) {
-    Message.error(res.data.msg || '错误');
+    // Message.error(res.data.msg || '错误');
   }
 };
 // 状态map
@@ -44,7 +44,7 @@ const resCodeMap = {
       description: `${res.data.msg || '暂无'},1秒后返回登录`,
       duration: 1,
       onClose: () => {
-        location.hash = '#/login';
+        // location.hash = '#/login';
         location.reload();
       }
     });
@@ -61,4 +61,4 @@ const serverError = (err, code) => {
   });
 };
 
-export default fetchData;
+export { fetchData };

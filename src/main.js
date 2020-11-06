@@ -4,6 +4,7 @@ import { registerComponent } from './antv';
 import { Message, Notification, Modal } from 'ant-design-vue';
 import { fetchData } from './utils/fetchData';
 import moment from 'moment';
+import router from './router';
 
 Vue.config.productionTip = false;
 registerComponent(Vue);
@@ -17,5 +18,6 @@ Message.config({ top: '100px' });
 Notification.config({ top: '80px' });
 
 new Vue({
+  router,
   render: (h) => h(App)
 }).$mount('#app');

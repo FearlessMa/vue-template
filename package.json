@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^1.6.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "concise-clock": "^1.0.4",
     "core-js": "^3.6.5",
     "moment": "^2.26.0",

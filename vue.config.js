@@ -1,5 +1,5 @@
 const path = require("path");
-// const config = require('./vue.env');
+const config = require('./vue.env');
 
 module.exports = {
   configureWebpack: {
@@ -15,6 +15,6 @@ module.exports = {
     config.plugin("html").tap(args => {
       return [{ ...args[0], title: "vue-demo" }];
     });
-  }
-  // ...config,
+  },
+  ...config,
 };

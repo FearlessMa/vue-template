@@ -13,7 +13,7 @@
     "axios": "^0.19.2",
     "concise-clock": "^1.0.4",
     "core-js": "^3.6.5",
-    "moment": "^2.26.0",
+    "moment": "^2.29.2",
     "nprogress": "^0.2.0",
     "sha1.js": "^0.1.1",
     "vue": "^2.6.11",
